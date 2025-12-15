@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade Hub - Premier Trading Institute in Nashik</title>
+    <meta
+      name="description"
+      content="Trade Hub: Premier Trading Institute in Nashik offering professional trading courses, live market training, and mentorship programs. Master the Market with Confidence!"
+    />
+    <meta
+      name="keywords"
+      content="trading institute, trading courses nashik, stock market training, forex trading, options trading, trading education, learn trading"
+    />
+    <meta name="author" content="Trade Hub" />
+    <meta
+      property="og:title"
+      content="Trade Hub: Premier Trading Institute in Nashik"
+    />
+    <meta
+      property="og:description"
+      content="Master the Market with Confidence! Join Nashik's premier trading education institute."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/path-to-hero-image.jpg"
+    />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Trade Hub - Premier Trading Institute in Nashik"
+    />
+    <meta
+      name="twitter:description"
+      content="Master the Market with Confidence!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/path-to-hero-image.jpg"
+    />
+    <link rel="icon" href="trade-hub-only-logo.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #0f63b2 0%,
+          #0a4d8c 50%,
+          #083a6b 100%
+        );
+      }
+
+      .green-gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #64a20f 0%,
+          #4d8c0a 50%,
+          #3a6b08 100%
+        );
+      }
+
+      .course-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-card {
+        transition: all 0.3s ease;
+      }
+
+      .nav-shadow {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .btn-glow:hover {
+        box-shadow: 0 0 20px rgba(15, 99, 178, 0.4);
+      }
+
+      .feature-icon {
+        background: linear-gradient(135deg, #0f63b2 0%, #0a4d8c 100%);
+      }
+
+      .stat-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+      }
+
+      .contact-form-bg {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+      }
+
+      .logo-bull {
+        color: #64a20f;
+      }
+
+      .logo-text {
+        color: #0f63b2;
+      }
+
+      .section-spacing {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      .contact-hover {
+        transition: all 0.3s ease;
+      }
+
+      .contact-hover:hover {
+        transform: translateX(5px);
+        color: #64a20f;
+      }
+
+      .icon-hover {
+        transition: all 0.3s ease;
+      }
+
+      .icon-hover:hover {
+        transform: scale(1.1);
+      }
+
+      .why-choose-card {
+        transition: all 0.3s ease;
+      }
+
+      .why-choose-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .enhanced-hover {
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .enhanced-hover:hover {
+        color: #64a20f;
+      }
+
+      .enhanced-hover::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #64a20f;
+        transition: width 0.3s ease;
+      }
+
+      .enhanced-hover:hover::after {
+        width: 20%;
+      }
+
+      .phone-email-hover {
+        transition: all 0.3s ease;
+      }
+
+      .phone-email-hover:hover {
+        color: #0f63b2;
+        transform: translateX(8px);
+      }
+
+      /* Video Background Styles */
+      .video-background-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .video-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(15, 99, 178, 0.7) 0%,
+          rgba(10, 77, 140, 0.6) 50%,
+          rgba(8, 58, 107, 0.5) 100%
+        );
+        z-index: 2;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+      }
+
+      /* Tablet-specific fixes */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        /* Fix 1: Enroll Now button text wrapping */
+        .nav-enroll-btn {
+          white-space: nowrap;
+          min-width: auto;
+          padding: 0.5rem 1rem;
+          font-size: 0.875rem;
+        }
+
+        /* Fix 2: Hero section alignment */
+        .hero-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .hero-text-container {
+          width: 100% !important;
+          padding-right: 0 !important;
+          margin-bottom: 2rem;
+        }
+
+        .hero-card-container {
+          width: 100% !important;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+
+        .hero-stats {
+          justify-content: center !important;
+          flex-wrap: wrap;
+          gap: 1.5rem;
+        }
+
+        /* Fix 3: Course cards stretching */
+        .courses-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 1rem !important;
+        }
+
+        .course-card-tablet {
+          height: auto !important;
+          min-height: unset !important;
+          padding: 1.25rem !important;
+        }
+
+        .course-card-tablet h3 {
+          font-size: 1.25rem !important;
+          line-height: 1.3 !important;
+        }
+
+        .course-features {
+          margin-bottom: 1rem !important;
+        }
+
+        .course-features div {
+          margin-bottom: 0.5rem !important;
+          font-size: 0.875rem !important;
+        }
+
+        /* Fix 4: Testimonial stretching */
+        .testimonials-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 1rem !important;
+        }
+
+        .testimonial-card {
+          height: auto !important;
+          min-height: unset !important;
+          padding: 1.25rem !important;
+        }
+
+        /* General tablet text adjustments */
+        .tablet-text-lg {
+          font-size: 1.125rem !important;
+          line-height: 1.4 !important;
+        }
+
+        .tablet-text-md {
+          font-size: 1rem !important;
+          line-height: 1.5 !important;
+        }
+
+        .tablet-text-sm {
+          font-size: 0.875rem !important;
+          line-height: 1.4 !important;
+        }
+
+        /* Tablet spacing */
+        .tablet-px {
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
+
+        .tablet-mb {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+
+      /* Mobile Optimizations */
+      @media (max-width: 640px) {
+        .section-spacing {
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .section-spacing {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+
+        button,
+        a {
+          min-height: 44px;
+        }
+
+        .enhanced-hover::after {
+          display: none;
+        }
+      }
+
+      /* Prevent horizontal overflow */
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      /* Better touch targets */
+      .touch-target {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation - Fixed Tablet Enroll Now Button -->
+    <nav class="bg-white fixed w-full z-50 nav-shadow rounded-b-lg">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-3">
+          <!-- Logo with Glass Effect -->
+          <div
+            class="w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12 rounded-lg flex items-center justify-center bg-green-500/15 backdrop-blur-md border border-green-400/30 shadow-lg"
+          >
+            <img
+              src="trade-hub-only-logo.png"
+              alt="Trade Hub Logo"
+              class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 rounded drop-shadow-lg"
+            />
+          </div>
+          <div>
+            <h1 class="text-lg sm:text-xl md:text-xl font-bold text-gray-800">
+              <span class="text-green-700">Trade</span> Hub
+            </h1>
+            <p class="text-xs sm:text-sm md:text-sm text-gray-500">
+              Trading Institute, Nashik
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex lg:space-x-8 md:space-x-4">
+          <a
+            href="#home"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            >Home</a
+          >
+          <a
+            href="#courses"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            >Courses</a
+          >
+          <a
+            href="#why-us"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            >Why Us</a
+          >
+          <a
+            href="#testimonials"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            >Stories</a
+          >
+          <a
+            href="#contact"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            >Contact</a
+          >
+        </div>
+
+        <!-- FIX 1: Enroll Now Button - Prevent text splitting -->
+        <div class="hidden md:block">
+          <a
+            href="#courses"
+            class="nav-enroll-btn gradient-bg text-white px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-2.5 rounded-lg font-medium hover:opacity-90 transition btn-glow text-xs md:text-sm lg:text-base whitespace-nowrap"
+          >
+            Enroll Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700 p-2">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden bg-white px-4 py-6 border-t shadow-lg"
+      >
+        <div class="flex flex-col space-y-4">
+          <a
+            href="#home"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            >Home</a
+          >
+          <a
+            href="#courses"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            >Courses</a
+          >
+          <a
+            href="#why-us"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            >Why Choose Us</a
+          >
+          <a
+            href="#testimonials"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            >Success Stories</a
+          >
+          <a
+            href="#contact"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            >Contact</a
+          >
+          <a
+            href="#courses"
+            class="gradient-bg text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition text-center text-base mt-4 whitespace-nowrap"
+            >Enroll Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Fixed Tablet Alignment -->
+    <section
+      id="home"
+      class="pt-20 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-24 relative overflow-hidden"
+    >
+      <!-- Video Background -->
+      <div class="video-background-container">
+        <video autoplay muted loop playsinline class="video-background">
+          <source src="trading-chart.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <!-- FIX 2: Hero Section Container with proper tablet alignment -->
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 hero-content">
+        <div class="hero-container flex flex-col lg:flex-row items-center">
+          <!-- Left Content -->
+          <div
+            class="hero-text-container lg:w-1/2 mb-8 md:mb-10 lg:mb-0 lg:pr-8"
+          >
+            <div class="mb-6 md:mb-8">
+              <span
+                class="inline-block bg-green-500 text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full mb-3 md:mb-4"
+                >Premium Trading Education</span
+              >
+              <h1
+                class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight"
+              >
+                Master the Market with Confidence!
+              </h1>
+              <p
+                class="text-base md:text-lg lg:text-lg text-blue-100 mb-5 sm:mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+              >
+                Trade Hub provides comprehensive trading education in Nashik,
+                helping you transform from beginner to professional trader with
+                structured programs and expert guidance.
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#courses"
+                class="bg-white text-blue-700 px-6 sm:px-6 md:px-8 py-3 rounded-lg font-semibold text-center hover:bg-gray-100 transition shadow-md relative z-10 text-sm md:text-base whitespace-nowrap"
+                >Explore Our Courses</a
+              >
+              <a
+                href="#contact"
+                class="bg-transparent border-2 border-white text-white px-6 sm:px-6 md:px-8 py-3 rounded-lg font-semibold text-center hover:bg-white hover:text-blue-700 transition relative z-10 text-sm md:text-base whitespace-nowrap"
+                >Book Free Demo</a
+              >
+            </div>
+
+            <!-- Stats - Tablet Optimized -->
+            <div
+              class="hero-stats mt-8 md:mt-10 flex flex-wrap justify-center lg:justify-start items-center gap-4 md:gap-6"
+            >
+              <div
+                class="flex items-center bg-white/10 backdrop-blur-sm rounded-xl p-3"
+              >
+                <div
+                  class="w-10 h-10 md:w-12 md:h-12 bg-blue-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-user-graduate text-white text-base md:text-lg"
+                  ></i>
+                </div>
+                <div>
+                  <p class="text-white font-bold text-lg md:text-xl">1000+</p>
+                  <p class="text-blue-100 text-sm md:text-base">
+                    Students Trained
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center bg-white/10 backdrop-blur-sm rounded-xl p-3"
+              >
+                <div
+                  class="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-chart-line text-white text-base md:text-lg"
+                  ></i>
+                </div>
+                <div>
+                  <p class="text-white font-bold text-lg md:text-xl">85%</p>
+                  <p class="text-blue-100 text-sm md:text-base">Success Rate</p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center bg-white/10 backdrop-blur-sm rounded-xl p-3"
+              >
+                <div
+                  class="w-10 h-10 md:w-12 md:h-12 bg-blue-400 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                >
+                  <i class="fas fa-award text-white text-base md:text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-white font-bold text-lg md:text-xl">
+                    5+ Years
+                  </p>
+                  <p class="text-blue-100 text-sm md:text-base">Expertise</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Card - Tablet Optimized -->
+          <div class="hero-card-container lg:w-1/2 mt-8 md:mt-10 lg:mt-0">
+            <div
+              class="bg-white rounded-2xl p-6 md:p-7 lg:p-8 shadow-2xl relative z-10"
+            >
+              <div class="flex items-center mb-5 md:mb-6">
+                <div
+                  class="w-12 h-12 md:w-14 md:h-14 green-gradient-bg rounded-full flex items-center justify-center mr-4 flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-chart-line text-white text-lg md:text-xl"
+                  ></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-xl md:text-2xl font-bold text-gray-800 tablet-text-lg"
+                  >
+                    Why Trade Hub?
+                  </h3>
+                  <p class="text-gray-600 text-sm md:text-base tablet-text-sm">
+                    Financial independence through market mastery
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-3 md:space-y-4 mb-5 md:mb-7">
+                <div class="flex items-start p-3 bg-blue-50 rounded-lg">
+                  <i
+                    class="fas fa-check-circle text-green-500 mt-0.5 mr-3 text-base"
+                  ></i>
+                  <div>
+                    <p
+                      class="font-medium text-gray-800 text-sm md:text-base tablet-text-sm"
+                    >
+                      Learn to analyze markets like a professional
+                    </p>
+                    <p
+                      class="text-gray-600 text-xs md:text-sm mt-1 tablet-text-sm"
+                    >
+                      Technical & fundamental analysis
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start p-3 bg-blue-50 rounded-lg">
+                  <i
+                    class="fas fa-check-circle text-green-500 mt-0.5 mr-3 text-base"
+                  ></i>
+                  <div>
+                    <p
+                      class="font-medium text-gray-800 text-sm md:text-base tablet-text-sm"
+                    >
+                      Manage risk effectively to protect capital
+                    </p>
+                    <p
+                      class="text-gray-600 text-xs md:text-sm mt-1 tablet-text-sm"
+                    >
+                      Proven risk management strategies
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start p-3 bg-blue-50 rounded-lg">
+                  <i
+                    class="fas fa-check-circle text-green-500 mt-0.5 mr-3 text-base"
+                  ></i>
+                  <div>
+                    <p
+                      class="font-medium text-gray-800 text-sm md:text-base tablet-text-sm"
+                    >
+                      Develop psychology for consistent profits
+                    </p>
+                    <p
+                      class="text-gray-600 text-xs md:text-sm mt-1 tablet-text-sm"
+                    >
+                      Emotional control & discipline
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start p-3 bg-blue-50 rounded-lg">
+                  <i
+                    class="fas fa-check-circle text-green-500 mt-0.5 mr-3 text-base"
+                  ></i>
+                  <div>
+                    <p
+                      class="font-medium text-gray-800 text-sm md:text-base tablet-text-sm"
+                    >
+                      Join a community of successful traders
+                    </p>
+                    <p
+                      class="text-gray-600 text-xs md:text-sm mt-1 tablet-text-sm"
+                    >
+                      Network & learn from peers
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <p
+                  class="text-gray-600 text-sm md:text-base mb-2 tablet-text-sm"
+                >
+                  Limited seats available for next batch
+                </p>
+                <div
+                  class="flex items-center justify-center text-green-600 font-bold text-sm md:text-base tablet-text-sm"
+                >
+                  <i class="fas fa-clock mr-2"></i>
+                  <span>Batch starts: 15th December 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section - Fixed Tablet Card Stretching -->
+    <section id="courses" class="section-spacing bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4"
+          >
+            Choose Your Trading Program
+          </h2>
+          <p
+            class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2 md:px-4"
+          >
+            Select the perfect program based on your learning preferences,
+            schedule, and budget.
+          </p>
+        </div>
+
+        <!-- FIX 3: Courses Grid with proper tablet sizing -->
+        <div
+          class="courses-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+        >
+          <!-- Course 1 - Recorded Lectures Only -->
+          <div
+            class="course-card course-card-tablet bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 shadow-lg flex flex-col"
+          >
+            <div class="mb-4 sm:mb-6">
+              <div class="flex justify-between items-start mb-4 sm:mb-6">
+                <div class="pr-2 sm:pr-4">
+                  <span
+                    class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-full"
+                    >Self-Paced</span
+                  >
+                  <h3
+                    class="text-lg sm:text-xl md:text-xl lg:text-2xl font-bold text-gray-800 mt-2 sm:mt-3 md:mt-4 mb-1 sm:mb-2"
+                  >
+                    Recorded Lectures
+                  </h3>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                  >
+                    Learn at your own pace
+                  </p>
+                </div>
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-video text-white text-sm sm:text-base md:text-lg"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="course-features space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-play-circle text-blue-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Lifetime Access</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-clock text-blue-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Learn Anytime</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-download text-blue-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Downloadable Materials</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-certificate text-blue-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Course Certificate</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-times-circle text-gray-400 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span
+                    class="text-gray-500 text-xs sm:text-sm md:text-sm lg:text-base"
+                    >No Live Sessions</span
+                  >
+                </div>
+              </div>
+
+              <div class="mb-4 sm:mb-6">
+                <p
+                  class="text-gray-800 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Perfect for:
+                </p>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Self-learners who prefer to study at their own pace.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-auto">
+              <div class="mb-4 sm:mb-6 text-center">
+                <div
+                  class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-gray-800"
+                >
+                  ₹7,000
+                </div>
+                <div
+                  class="text-gray-500 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  One-time payment
+                </div>
+              </div>
+
+              <a
+                href="#contact"
+                class="flex items-center justify-center w-full gradient-bg text-white py-2 sm:py-3 rounded-lg font-semibold hover:opacity-90 transition btn-glow text-xs sm:text-sm md:text-base whitespace-nowrap"
+              >
+                <span>Enroll Now</span>
+                <i class="fas fa-arrow-right ml-1 sm:ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Course 2 - Online Live Program -->
+          <div
+            class="course-card course-card-tablet bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 shadow-lg flex flex-col relative"
+          >
+            <div
+              class="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2"
+            >
+              <span
+                class="bg-green-500 text-white text-xs font-bold px-2 sm:px-3 py-1 rounded-full shadow-lg whitespace-nowrap"
+                >Most Popular</span
+              >
+            </div>
+            <div class="mb-4 sm:mb-6">
+              <div class="flex justify-between items-start mb-4 sm:mb-6">
+                <div class="pr-2 sm:pr-4">
+                  <span
+                    class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full"
+                    >Live Online</span
+                  >
+                  <h3
+                    class="text-lg sm:text-xl md:text-xl lg:text-2xl font-bold text-gray-800 mt-2 sm:mt-3 md:mt-4 mb-1 sm:mb-2"
+                  >
+                    Online Trading Program
+                  </h3>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                  >
+                    Interactive live sessions
+                  </p>
+                </div>
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 green-gradient-bg rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-laptop text-white text-sm sm:text-base md:text-lg"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="course-features space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-video text-green-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Lifetime Access</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-broadcast-tower text-green-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Live Sessions</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-question-circle text-green-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Doubt Solving</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-users text-green-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Community Access</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-certificate text-green-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Course Certificate</span
+                  >
+                </div>
+              </div>
+
+              <div class="mb-4 sm:mb-6">
+                <p
+                  class="text-gray-800 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Perfect for:
+                </p>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Those who want live interaction and flexible learning.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-auto">
+              <div class="mb-4 sm:mb-6 text-center">
+                <div
+                  class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-gray-800"
+                >
+                  ₹16,000
+                </div>
+                <div
+                  class="text-gray-500 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  One-time payment
+                </div>
+              </div>
+
+              <a
+                href="#contact"
+                class="flex items-center justify-center w-full green-gradient-bg text-white py-2 sm:py-3 rounded-lg font-semibold hover:opacity-90 transition btn-glow text-xs sm:text-sm md:text-base whitespace-nowrap"
+              >
+                <span>Enroll Now</span>
+                <i class="fas fa-arrow-right ml-1 sm:ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Course 3 - Offline Classroom Program -->
+          <div
+            class="course-card course-card-tablet bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 shadow-lg flex flex-col md:col-span-2 lg:col-span-1"
+          >
+            <div class="mb-4 sm:mb-6">
+              <div class="flex justify-between items-start mb-4 sm:mb-6">
+                <div class="pr-2 sm:pr-4">
+                  <span
+                    class="bg-purple-100 text-purple-700 text-xs font-semibold px-2 py-1 rounded-full"
+                    >Premium</span
+                  >
+                  <h3
+                    class="text-lg sm:text-xl md:text-xl lg:text-2xl font-bold text-gray-800 mt-2 sm:mt-3 md:mt-4 mb-1 sm:mb-2"
+                  >
+                    Offline Classroom
+                  </h3>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                  >
+                    Hands-on trading education
+                  </p>
+                </div>
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-10 md:h-10 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="fas fa-chalkboard-teacher text-white text-sm sm:text-base md:text-lg"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="course-features space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-video text-purple-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Lifetime Access</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-chalkboard text-purple-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Classroom Lectures</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-handshake text-purple-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Mentor Interaction</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-desktop text-purple-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Trading Lab</span
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <i
+                    class="fas fa-network-wired text-purple-500 mr-2 text-xs sm:text-sm"
+                  ></i>
+                  <span class="text-xs sm:text-sm md:text-sm lg:text-base"
+                    >Networking Events</span
+                  >
+                </div>
+              </div>
+
+              <div class="mb-4 sm:mb-6">
+                <p
+                  class="text-gray-800 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Perfect for:
+                </p>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  Those who prefer face-to-face learning.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-auto">
+              <div class="mb-4 sm:mb-6 text-center">
+                <div
+                  class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-gray-800"
+                >
+                  ₹34,000
+                </div>
+                <div
+                  class="text-gray-500 text-xs sm:text-sm md:text-sm lg:text-base"
+                >
+                  One-time payment
+                </div>
+              </div>
+
+              <a
+                href="#contact"
+                class="flex items-center justify-center w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white py-2 sm:py-3 rounded-lg font-semibold hover:opacity-90 transition btn-glow text-xs sm:text-sm md:text-base whitespace-nowrap"
+              >
+                <span>Enroll Now</span>
+                <i class="fas fa-arrow-right ml-1 sm:ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 md:mt-12 lg:mt-16 text-center px-2">
+          <p class="text-gray-600 text-sm md:text-base lg:text-lg">
+            Not sure which program is right for you?
+            <a
+              href="#contact"
+              class="text-blue-600 font-semibold hover:underline enhanced-hover"
+              >Contact our advisors</a
+            >
+            for personalized guidance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section-spacing bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4"
+          >
+            Why Choose Trade Hub
+          </h2>
+          <p
+            class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2 md:px-4"
+          >
+            Discover what makes us the premier choice for trading education in
+            Nashik
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 md:mb-12 lg:mb-16"
+        >
+          <div
+            class="bg-gradient-to-br from-blue-50 to-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-8 border-l-4 border-blue-500"
+          >
+            <div class="flex items-start mb-3 sm:mb-4 md:mb-6">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 gradient-bg rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0"
+              >
+                <i
+                  class="fas fa-chalkboard-teacher text-white text-sm sm:text-base md:text-xl"
+                ></i>
+              </div>
+              <div>
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-gray-800 mb-1 sm:mb-2"
+                >
+                  Expert Mentors with Real Experience
+                </h3>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Learn from industry professionals with 10+ years of trading
+                  experience across various market conditions.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="space-y-1 sm:space-y-2 md:space-y-3 ml-0 sm:ml-14 md:ml-18"
+            >
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Personalized one-on-one mentorship</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Live trading sessions with expert guidance</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Continuous feedback and performance tracking</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-green-50 to-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-8 border-l-4 border-green-500"
+          >
+            <div class="flex items-start mb-3 sm:mb-4 md:mb-6">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 green-gradient-bg rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0"
+              >
+                <i
+                  class="fas fa-hands-helping text-white text-sm sm:text-base md:text-xl"
+                ></i>
+              </div>
+              <div>
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-gray-800 mb-1 sm:mb-2"
+                >
+                  Practical, Hands-On Learning
+                </h3>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  80% practical training with live market sessions, simulated
+                  trading, and real-time analysis.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="space-y-1 sm:space-y-2 md:space-y-3 ml-0 sm:ml-14 md:ml-18"
+            >
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Live market analysis during trading hours</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Trading simulators for risk-free practice</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Real-time trade execution with guidance</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-blue-50 to-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-8 border-l-4 border-blue-500"
+          >
+            <div class="flex items-start mb-3 sm:mb-4 md:mb-6">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 gradient-bg rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0"
+              >
+                <i
+                  class="fas fa-users text-white text-sm sm:text-base md:text-xl"
+                ></i>
+              </div>
+              <div>
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-gray-800 mb-1 sm:mb-2"
+                >
+                  Lifetime Community & Support
+                </h3>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Join an exclusive network of traders for ongoing support,
+                  mentorship, and networking opportunities.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="space-y-1 sm:space-y-2 md:space-y-3 ml-0 sm:ml-14 md:ml-18"
+            >
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Exclusive alumni network access</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Weekly market analysis webinars</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-green-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >24/7 access to trading resources</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-green-50 to-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-8 border-l-4 border-green-500"
+          >
+            <div class="flex items-start mb-3 sm:mb-4 md:mb-6">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 green-gradient-bg rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0"
+              >
+                <i
+                  class="fas fa-shield-alt text-white text-sm sm:text-base md:text-xl"
+                ></i>
+              </div>
+              <div>
+                <h3
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-gray-800 mb-1 sm:mb-2"
+                >
+                  Risk-First Mindset & Strategies
+                </h3>
+                <p
+                  class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Master proven risk management strategies to protect your
+                  capital and maximize profitability.
+                </p>
+              </div>
+            </div>
+            <ul
+              class="space-y-1 sm:space-y-2 md:space-y-3 ml-0 sm:ml-14 md:ml-18"
+            >
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Capital protection techniques</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Position sizing and portfolio management</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-blue-500 mt-0.5 mr-2 text-xs sm:text-sm"
+                ></i>
+                <span class="text-gray-700 text-xs sm:text-sm md:text-base"
+                  >Emotional control and trading psychology</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div
+          class="relative rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden mb-8 md:mb-12 lg:mb-16"
+        >
+          <div class="absolute inset-0 gradient-bg"></div>
+          <div class="relative z-10 p-4 sm:p-6 md:p-8 lg:p-10 text-white">
+            <div class="text-center mb-4 sm:mb-6 md:mb-8">
+              <h3
+                class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold mb-2 sm:mb-3 md:mb-4"
+              >
+                Our Track Record Speaks for Itself
+              </h3>
+              <p
+                class="text-blue-100 max-w-2xl mx-auto text-xs sm:text-sm md:text-base lg:text-base"
+              >
+                Join hundreds of successful traders who started their journey
+                with Trade Hub
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 text-center"
+            >
+              <div
+                class="p-2 sm:p-3 md:p-4 bg-white/10 rounded-lg md:rounded-xl"
+              >
+                <div
+                  class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1"
+                >
+                  5+
+                </div>
+                <div class="text-xs sm:text-sm md:text-base lg:text-lg">
+                  Years of Excellence
+                </div>
+              </div>
+              <div
+                class="p-2 sm:p-3 md:p-4 bg-white/10 rounded-lg md:rounded-xl"
+              >
+                <div
+                  class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1"
+                >
+                  1000+
+                </div>
+                <div class="text-xs sm:text-sm md:text-base lg:text-lg">
+                  Students Trained
+                </div>
+              </div>
+              <div
+                class="p-2 sm:p-3 md:p-4 bg-white/10 rounded-lg md:rounded-xl"
+              >
+                <div
+                  class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1"
+                >
+                  85%
+                </div>
+                <div class="text-xs sm:text-sm md:text-base lg:text-lg">
+                  Success Rate
+                </div>
+              </div>
+              <div
+                class="p-2 sm:p-3 md:p-4 bg-white/10 rounded-lg md:rounded-xl"
+              >
+                <div
+                  class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1"
+                >
+                  24/7
+                </div>
+                <div class="text-xs sm:text-sm md:text-base lg:text-lg">
+                  Community Support
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <h3
+            class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold text-gray-800 mb-3 sm:mb-4"
+          >
+            Ready to Transform Your Trading Journey?
+          </h3>
+          <p
+            class="text-gray-600 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto text-sm md:text-base lg:text-base"
+          >
+            Join our next batch and start your journey to becoming a confident,
+            profitable trader.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block green-gradient-bg text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-3.5 rounded-lg font-semibold hover:opacity-90 transition btn-glow text-sm md:text-base whitespace-nowrap"
+          >
+            <i class="fas fa-calendar-check mr-2"></i>Book Your Free Demo
+            Session
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="section-spacing gradient-bg">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4"
+          >
+            Success Stories
+          </h2>
+          <p
+            class="text-blue-100 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2 md:px-4"
+          >
+            Hear from our students who transformed their trading journey with
+            our programs.
+          </p>
+        </div>
+
+        <!-- FIX 4: Testimonials Grid with proper tablet sizing -->
+        <div
+          class="testimonials-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+        >
+          <div
+            class="testimonial-card stat-card bg-white/10 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 border border-white/20"
+          >
+            <div class="flex items-center mb-3 sm:mb-4 md:mb-6">
+              <img
+                src="fm-avatar-4.jpg"
+                alt="Meenakshi Sarode"
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-white mr-3 sm:mr-4"
+              />
+              <div>
+                <h4
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-white"
+                >
+                  Meenakshi Sarode
+                </h4>
+                <p
+                  class="text-blue-100 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Recorded Lectures
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-blue-100 italic mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base lg:text-base"
+            >
+              "The Recorded Lectures gave me the flexibility to learn anytime. The structured content and resources made complex concepts easy to understand. I developed a profitable trading strategy entirely through self paced learning."
+            </p>
+            <div class="flex">
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card stat-card bg-white/10 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 border border-white/20"
+          >
+            <div class="flex items-center mb-3 sm:mb-4 md:mb-6">
+              <img
+                src="m-avatar-5.jpg"
+                alt="Aakash Sharma"
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-white mr-3 sm:mr-4"
+              />
+              <div>
+                <h4
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-white"
+                >
+                  Aakash Sharma
+                </h4>
+                <p
+                  class="text-blue-100 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Online Trading Program
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-blue-100 italic mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base lg:text-base"
+            >
+              "As a working professional, the flexibility of online learning was
+              perfect. The weekly Q&A sessions with mentors ensured all my
+              doubts were cleared promptly."
+            </p>
+            <div class="flex">
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star-half-alt text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card stat-card bg-white/10 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-6 border border-white/20 md:col-span-2 lg:col-span-1"
+          >
+            <div class="flex items-center mb-3 sm:mb-4 md:mb-6">
+              <img
+                src="fm-avatar-3.jpg"
+                alt="Mithila Patil"
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-white mr-3 sm:mr-4"
+              />
+              <div>
+                <h4
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold text-white"
+                >
+                  Mithila Patil
+                </h4>
+                <p
+                  class="text-blue-100 text-xs sm:text-sm md:text-base lg:text-base"
+                >
+                  Offline Classroom Program
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-blue-100 italic mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base lg:text-base"
+            >
+              "The classroom environment and trading lab access made all the
+              difference. Direct interaction with mentors and networking events
+              opened new opportunities."
+            </p>
+            <div class="flex">
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+              <i
+                class="fas fa-star text-yellow-400 text-xs sm:text-sm md:text-base"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-spacing bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4"
+          >
+            Start Your Trading Journey Today
+          </h2>
+          <p
+            class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2 md:px-4"
+          >
+            Get in touch with our team to learn more about our programs or
+            enroll in your chosen course.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start"
+        >
+          <div class="lg:pl-0 xl:pl-12">
+            <h3
+              class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8"
+            >
+              Contact Information
+            </h3>
+
+            <div class="space-y-4 sm:space-y-6 md:space-y-8">
+              <div class="flex items-start group">
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 green-gradient-bg rounded-lg flex items-center justify-center mr-3 sm:mr-4 md:mr-6 flex-shrink-0 icon-hover"
+                >
+                  <i
+                    class="fas fa-map-marker-alt text-white text-sm sm:text-base md:text-xl"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-gray-800 mb-1"
+                  >
+                    Our Location
+                  </h4>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                  >
+                    Trade Hub, Office No. 607, Floor No. 6<br/>
+                    Yeolekar Complex, Yeolekar Mala, College Road,<br/>
+                    Nashik, Maharashtra - 422003.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start group">
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 gradient-bg rounded-lg flex items-center justify-center mr-3 sm:mr-4 md:mr-6 flex-shrink-0 icon-hover"
+                >
+                  <i
+                    class="fas fa-phone-alt text-white text-sm sm:text-base md:text-xl"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-gray-800 mb-1"
+                  >
+                    Phone Number
+                  </h4>
+                  <a
+                    href="tel:+919545654696"
+                    class="block text-gray-600 mb-1 phone-email-hover text-xs sm:text-sm md:text-base lg:text-base"
+                    >+91 95456 54696</a
+                  >
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                  >
+                    Mon-Sat: 9:00 AM - 7:00 PM
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start group">
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center mr-3 sm:mr-4 md:mr-6 flex-shrink-0 icon-hover"
+                >
+                  <i
+                    class="fas fa-envelope text-white text-sm sm:text-base md:text-xl"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-gray-800 mb-1"
+                  >
+                    Email Address
+                  </h4>
+                  <a
+                    href="mailto:info@tradehub.com"
+                    class="block text-gray-600 mb-1 phone-email-hover text-xs sm:text-sm md:text-base lg:text-base"
+                    >info@tradehub.com</a
+                  >
+                  <a
+                    href="mailto:admissions@tradehub.com"
+                    class="block text-gray-600 phone-email-hover text-xs sm:text-sm md:text-base lg:text-base"
+                    >admissions@tradehub.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start group">
+                <div
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-3 sm:mr-4 md:mr-6 flex-shrink-0 icon-hover"
+                >
+                  <i
+                    class="fas fa-clock text-white text-sm sm:text-base md:text-xl"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-sm sm:text-base md:text-lg lg:text-lg font-bold text-gray-800 mb-1"
+                  >
+                    Office Hours
+                  </h4>
+                  <p
+                    class="text-gray-600 mb-1 text-xs sm:text-sm md:text-base lg:text-base"
+                  >
+                    Monday - Saturday: 9:00 AM - 7:00 PM
+                  </p>
+                  <p
+                    class="text-gray-600 text-xs sm:text-sm md:text-base lg:text-base"
+                  >
+                    Sunday: 10:00 AM - 2:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 sm:mt-10 md:mt-12">
+              <h4
+                class="text-base sm:text-lg font-bold text-gray-800 mb-3 sm:mb-4 md:mb-6"
+              >
+                Follow Us
+              </h4>
+              <div class="flex space-x-2 sm:space-x-3 md:space-x-4">
+                <!-- Facebook -->
+                <!-- <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition icon-hover"
+                >
+                  <i
+                    class="fab fa-facebook-f text-xs sm:text-sm md:text-base"
+                  ></i>
+                </a> -->
+
+                <!-- X -->
+                <!-- <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition icon-hover"
+                >
+                  <i class="fab fa-twitter text-xs sm:text-sm md:text-base"></i>
+                </a> -->
+
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/trade.hub.india?igsh=eXZob3R5b2t0NHNh"
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition icon-hover"
+                >
+                  <i
+                    class="fab fa-instagram text-xs sm:text-sm md:text-base"
+                  ></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <!-- <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition icon-hover"
+                >
+                  <i
+                    class="fab fa-linkedin-in text-xs sm:text-sm md:text-base"
+                  ></i>
+                </a> -->
+
+                <!-- YouTube -->
+                <!-- <a
+                  href="#"
+                  class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 transition icon-hover"
+                >
+                  <i class="fab fa-youtube text-xs sm:text-sm md:text-base"></i>
+                </a> -->
+              </div>
+            </div>
+
+            <div
+              class="mt-8 sm:mt-10 md:mt-12 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8"
+            >
+              <h4
+                class="text-base sm:text-lg font-bold text-gray-800 mb-2 sm:mb-3 md:mb-4"
+              >
+                Still Have Any Doubt?
+              </h4>
+              <p
+                class="text-gray-600 mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base lg:text-base"
+              >
+                We've answered the most common questions from prospective
+                students to help you make an informed decision.
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center text-blue-600 font-semibold enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+              >
+                <span>Contact Us</span>
+                <i class="fas fa-chevron-right ml-2 text-xs sm:text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-xl md:rounded-2xl lg:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg"
+          >
+            <h3
+              class="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 md:mb-6"
+            >
+              Get in Touch
+            </h3>
+            <form id="contact-form">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6"
+              >
+                <div>
+                  <label
+                    class="block text-gray-700 mb-1 sm:mb-2 text-xs sm:text-sm md:text-base lg:text-base"
+                    for="name"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm md:text-base"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-gray-700 mb-1 sm:mb-2 text-xs sm:text-sm md:text-base lg:text-base"
+                    for="phone"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm md:text-base"
+                    placeholder="Enter your phone"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 sm:mb-4 md:mb-6">
+                <label
+                  class="block text-gray-700 mb-1 sm:mb-2 text-xs sm:text-sm md:text-base lg:text-base"
+                  for="email"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm md:text-base"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="mb-3 sm:mb-4 md:mb-6">
+                <label
+                  class="block text-gray-700 mb-1 sm:mb-2 text-xs sm:text-sm md:text-base lg:text-base"
+                  for="course"
+                  >Interested Course</label
+                >
+                <select
+                  id="course"
+                  class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm md:text-base"
+                >
+                  <option value="">Select a course</option>
+                  <option value="professional">
+                    Professional Trading Mastery
+                  </option>
+                  <option value="online">Online Trading Program</option>
+                  <option value="offline">Offline Classroom Program</option>
+                </select>
+              </div>
+
+              <div class="mb-4 sm:mb-6 md:mb-8">
+                <label
+                  class="block text-gray-700 mb-1 sm:mb-2 text-xs sm:text-sm md:text-base lg:text-base"
+                  for="message"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="3"
+                  class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm md:text-base"
+                  placeholder="Tell us about your trading experience and goals"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full gradient-bg text-white py-2 sm:py-3 md:py-4 rounded-lg font-semibold text-sm sm:text-base md:text-lg hover:opacity-90 transition btn-glow"
+              >
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 sm:py-10 md:py-12">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10"
+        >
+          <div>
+            <div class="flex items-center space-x-3 mb-4 sm:mb-6">
+              <div
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-green-400/20 via-blue-400/10 to-purple-400/10 backdrop-blur-xl border border-white/20 shadow-xl"
+              >
+                <img
+                  src="trade-hub-only-logo.png"
+                  alt="Trade Hub Logo"
+                  class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded drop-shadow-xl"
+                />
+              </div>
+              <div>
+                <h2
+                  class="text-base sm:text-lg md:text-xl lg:text-xl font-bold"
+                >
+                  Trade Hub
+                </h2>
+                <p
+                  class="text-gray-400 text-xs sm:text-sm md:text-sm lg:text-sm"
+                >
+                  Trading Institute, Nashik
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-gray-400 text-xs sm:text-sm md:text-base lg:text-base"
+            >
+              Nashik's premier trading education institute providing
+              comprehensive programs for aspiring traders since 2024.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              class="text-sm sm:text-base md:text-lg lg:text-lg font-bold mb-3 sm:mb-4 md:mb-6"
+            >
+              Quick Links
+            </h3>
+            <div class="flex flex-col space-y-1 sm:space-y-2 md:space-y-3">
+              <a
+                href="#home"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Home</a
+              >
+              <a
+                href="#courses"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Courses</a
+              >
+              <a
+                href="#why-us"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Why Choose Us</a
+              >
+              <a
+                href="#testimonials"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Success Stories</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <h3
+              class="text-sm sm:text-base md:text-lg lg:text-lg font-bold mb-3 sm:mb-4 md:mb-6"
+            >
+              Our Programs
+            </h3>
+            <div class="flex flex-col space-y-1 sm:space-y-2 md:space-y-3">
+              <a
+                href="#courses"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Professional Trading Mastery</a
+              >
+              <a
+                href="#courses"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Online Trading Program</a
+              >
+              <a
+                href="#courses"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Offline Classroom Program</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >Free Demo Session</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <h3
+              class="text-sm sm:text-base md:text-lg lg:text-lg font-bold mb-3 sm:mb-4 md:mb-6"
+            >
+              Contact Info
+            </h3>
+            <div class="space-y-1 sm:space-y-2 md:space-y-3">
+              <p
+                class="text-gray-400 phone-email-hover cursor-pointer text-xs sm:text-sm md:text-base lg:text-base"
+              >
+                Trade Hub, Office No. 607, Floor No. 6, Yeolekar Complex, Yeolekar Mala, College Road, Nashik, Maharashtra - 422003.
+              </p>
+              <a
+                href="tel:+919545654696"
+                class="block text-gray-400 hover:text-white transition phone-email-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >+91 95456 54696</a
+              >
+              <a
+                href="mailto:info@tradehub.com"
+                class="block text-gray-400 hover:text-white transition phone-email-hover text-xs sm:text-sm md:text-base lg:text-base"
+                >info@tradehub.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400"
+        >
+          <p class="text-xs sm:text-sm md:text-base lg:text-base">
+            &copy; 2024 Trade Hub Trading Institute. All rights reserved. |
+            <!-- <a
+              href="#"
+              class="hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+              >Privacy Policy</a
+            >
+            |
+            <a
+              href="#"
+              class="hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+              >Terms of Service</a
+            > -->
+            
+            <span>Made with 🩵 by <a
+              href="https://www.digitalsupremacy.in/"
+              class="hover:text-white transition text-xs sm:text-sm md:text-base lg:text-base"
+              >Digital Supremacy</a
+            ></span>
+          </p>
+          <p class="mt-1 sm:mt-2 text-xs sm:text-sm lg:text-sm">
+            <span class="text-[#FF0000]">Disclaimer:</span> Trading involves risk. Past performance is not
+            indicative of future results.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Enhanced mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+
+          // Change icon
+          const icon = this.querySelector("i");
+          if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+          } else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+          }
+        });
+
+      // Enhanced smooth scrolling for mobile
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Calculate offset based on screen size
+            const isMobile = window.innerWidth < 768;
+            const isTablet =
+              window.innerWidth >= 768 && window.innerWidth <= 1024;
+            const offset = isMobile ? 70 : isTablet ? 75 : 80;
+
+            window.scrollTo({
+              top: targetElement.offsetTop - offset,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            const menu = document.getElementById("mobile-menu");
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const menuIcon = menuBtn.querySelector("i");
+
+            if (!menu.classList.contains("hidden")) {
+              menu.classList.add("hidden");
+              menuIcon.classList.remove("fa-times");
+              menuIcon.classList.add("fa-bars");
+            }
+          }
+        });
+      });
+
+      // Handle window resize for responsive behavior
+      let resizeTimer;
+      window.addEventListener("resize", function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          // Reset mobile menu icon if window is resized to desktop
+          if (window.innerWidth >= 768) {
+            const menuBtn = document.getElementById("mobile-menu-btn");
+            const menuIcon = menuBtn.querySelector("i");
+            const menu = document.getElementById("mobile-menu");
+
+            menu.classList.add("hidden");
+            menuIcon.classList.remove("fa-times");
+            menuIcon.classList.add("fa-bars");
+          }
+        }, 250);
+      });
+
+      // Touch device detection for better UX
+      function isTouchDevice() {
+        return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      }
+
+      // Add touch-specific enhancements
+      if (isTouchDevice()) {
+        // Add touch-friendly hover states
+        document.querySelectorAll(".enhanced-hover").forEach((el) => {
+          el.addEventListener("touchstart", function () {
+            this.classList.add("touch-active");
+          });
+
+          el.addEventListener("touchend", function () {
+            this.classList.remove("touch-active");
+          });
+        });
+
+        // Prevent zoom on double-tap for buttons on mobile
+        document.querySelectorAll("button, a").forEach((el) => {
+          el.style.touchAction = "manipulation";
+        });
+      }
+    </script>
+  </body>
+</html>
