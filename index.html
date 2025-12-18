@@ -154,16 +154,17 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       }
 
-      .enhanced-hover {
+      /* Underline - 1 */
+      .enhanced-hover-one {
         transition: all 0.3s ease;
         position: relative;
       }
 
-      .enhanced-hover:hover {
+      .enhanced-hover-one:hover {
         color: #64a20f;
       }
 
-      .enhanced-hover::after {
+      .enhanced-hover-one::after {
         content: "";
         position: absolute;
         width: 0;
@@ -174,8 +175,33 @@
         transition: width 0.3s ease;
       }
 
-      .enhanced-hover:hover::after {
-        width: 20%;
+      .enhanced-hover-one:hover::after {
+        width: 25%;
+      }
+
+      /* Underline - 2 */
+      .enhanced-hover-two {
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .enhanced-hover-two:hover {
+        color: #64a20f;
+      }
+
+      .enhanced-hover-two::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #64a20f;
+        transition: width 0.3s ease;
+      }
+
+      .enhanced-hover-two:hover::after {
+        width: 50%;
       }
 
       .phone-email-hover {
@@ -345,7 +371,11 @@
           min-height: 44px;
         }
 
-        .enhanced-hover::after {
+        .enhanced-hover-one::after {
+          display: none;
+        }
+
+        .enhanced-hover-two::after {
           display: none;
         }
       }
@@ -397,27 +427,27 @@
         <div class="hidden md:flex lg:space-x-8 md:space-x-4">
           <a
             href="#home"
-            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover-one px-2 py-1 text-sm lg:text-base"
             >Home</a
           >
           <a
             href="#courses"
-            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover-one px-2 py-1 text-sm lg:text-base"
             >Courses</a
           >
           <a
             href="#why-us"
-            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover-one px-2 py-1 text-sm lg:text-base"
             >Why Us</a
           >
           <a
             href="#testimonials"
-            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover-one px-2 py-1 text-sm lg:text-base"
             >Stories</a
           >
           <a
             href="#contact"
-            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover px-2 py-1 text-sm lg:text-base"
+            class="font-medium text-gray-700 hover:text-green-600 transition enhanced-hover-one px-2 py-1 text-sm lg:text-base"
             >Contact</a
           >
         </div>
@@ -445,27 +475,27 @@
         <div class="flex flex-col space-y-4">
           <a
             href="#home"
-            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover-one py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
             >Home</a
           >
           <a
             href="#courses"
-            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover-one py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
             >Courses</a
           >
           <a
             href="#why-us"
-            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover-one py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
             >Why Choose Us</a
           >
           <a
             href="#testimonials"
-            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover-one py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
             >Success Stories</a
           >
           <a
             href="#contact"
-            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
+            class="font-medium text-gray-700 hover:text-green-600 enhanced-hover-one py-3 px-4 rounded-lg hover:bg-gray-50 transition text-base"
             >Contact</a
           >
           <a
@@ -1075,7 +1105,7 @@
             Not sure which program is right for you?
             <a
               href="#contact"
-              class="text-blue-600 font-semibold hover:underline enhanced-hover"
+              class="text-blue-600 font-semibold hover:underline enhanced-hover-two"
               >Contact our advisors</a
             >
             for personalized guidance.
@@ -1802,7 +1832,7 @@
               </p>
               <a
                 href="#contact"
-                class="inline-flex items-center text-blue-600 font-semibold enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="inline-flex items-center text-blue-600 font-semibold enhanced-hover-two text-xs sm:text-sm md:text-base lg:text-base"
               >
                 <span>Contact Us</span>
                 <i class="fas fa-chevron-right ml-2 text-xs sm:text-sm"></i>
@@ -1956,27 +1986,27 @@
             <div class="flex flex-col space-y-1 sm:space-y-2 md:space-y-3">
               <a
                 href="#home"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-one text-xs sm:text-sm md:text-base lg:text-base"
                 >Home</a
               >
               <a
                 href="#courses"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-one text-xs sm:text-sm md:text-base lg:text-base"
                 >Courses</a
               >
               <a
                 href="#why-us"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-one text-xs sm:text-sm md:text-base lg:text-base"
                 >Why Choose Us</a
               >
               <a
                 href="#testimonials"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-one text-xs sm:text-sm md:text-base lg:text-base"
                 >Success Stories</a
               >
               <a
                 href="#contact"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-one text-xs sm:text-sm md:text-base lg:text-base"
                 >Contact</a
               >
             </div>
@@ -1991,22 +2021,22 @@
             <div class="flex flex-col space-y-1 sm:space-y-2 md:space-y-3">
               <a
                 href="#courses"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
-                >Professional Trading Mastery</a
+                class="text-gray-400 hover:text-white transition enhanced-hover-two text-xs sm:text-sm md:text-base lg:text-base"
+                >Recorded Lectures</a
               >
               <a
                 href="#courses"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-two text-xs sm:text-sm md:text-base lg:text-base"
                 >Online Trading Program</a
               >
               <a
                 href="#courses"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-two text-xs sm:text-sm md:text-base lg:text-base"
                 >Offline Classroom Program</a
               >
               <a
                 href="#contact"
-                class="text-gray-400 hover:text-white transition enhanced-hover text-xs sm:text-sm md:text-base lg:text-base"
+                class="text-gray-400 hover:text-white transition enhanced-hover-two text-xs sm:text-sm md:text-base lg:text-base"
                 >Free Demo Session</a
               >
             </div>
@@ -2149,7 +2179,17 @@
       // Add touch-specific enhancements
       if (isTouchDevice()) {
         // Add touch-friendly hover states
-        document.querySelectorAll(".enhanced-hover").forEach((el) => {
+        document.querySelectorAll(".enhanced-hover-one").forEach((el) => {
+          el.addEventListener("touchstart", function () {
+            this.classList.add("touch-active");
+          });
+
+          el.addEventListener("touchend", function () {
+            this.classList.remove("touch-active");
+          });
+        });
+
+        document.querySelectorAll(".enhanced-hover-two").forEach((el) => {
           el.addEventListener("touchstart", function () {
             this.classList.add("touch-active");
           });
